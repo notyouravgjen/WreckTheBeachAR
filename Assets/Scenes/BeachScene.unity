@@ -3932,7 +3932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f915b2ac0bef40c1934b4cedaed0c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAngle: 0
+  rotationAngle: 60
 --- !u!23 &1985386021
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4117,7 +4117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f915b2ac0bef40c1934b4cedaed0c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAngle: 0
+  rotationAngle: 60
 --- !u!23 &1995861943
 MeshRenderer:
   m_ObjectHideFlags: 0
