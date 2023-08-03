@@ -5,7 +5,6 @@ public class WaterLogs : MonoBehaviour {
     public float momentumLossPerUpdate;
     public Transform waveObject;
     public float waveSpacing;
-    public KeyCode wavingKey;
     public int numOfFixedUpdatesPerWaveUpdate;
     private int currFixedUpdateCount;
     private Waveable waveNumbers;
@@ -20,16 +19,12 @@ public class WaterLogs : MonoBehaviour {
         for(int i=0; i < size; i++)
         {
             float xOffset = i * waveSpacing;
-            waves[i] = Instantiate(waveObject, new Vector3(transform.position.x + xOffset, transform.position.y, transform.position.z), Quaternion.Euler(90, 0, 0), transform);
+            waves[i] = Instantiate(waveObject, new Vector3(transform.position.x + xOffset, transform.position.y, transform.position.z), Quaternion.Euler(90, -90, 0), transform);
         }
 	}
 	
-	void FixedUpdate () {
-		if(Input.GetKeyDown(wavingKey) && !GameManager.instance.interactionDisabled)
-        {
-            waveNumbers.AddWave(singleWave);
-        }
-
+	void FixedUpdate ()
+    {
         currFixedUpdateCount++;
         if (currFixedUpdateCount >= numOfFixedUpdatesPerWaveUpdate)
         {
@@ -44,6 +39,14 @@ public class WaterLogs : MonoBehaviour {
             currFixedUpdateCount = 0;
         }
 	}
+
+    public void ApplyInput()
+    {
+        if (!GameManager.instance.interactionDisabled)
+        {
+            waveNumbers.AddWave(singleWave);
+        }
+    }
 
 	public void Reset()
 	{

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour {
 	private int currentRoundIndex;
 	private GameObject currentRoundDestructible;
 
-	public bool interactionDisabled;
+	public bool interactionDisabled { get; set; }
 
 	public static GameManager instance { get; private set; }
 
