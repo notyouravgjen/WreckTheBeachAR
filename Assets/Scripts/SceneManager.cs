@@ -15,6 +15,9 @@ public class SceneManager : MonoBehaviour
     [SerializeField]
     private HandController rightHand;
 
+    [SerializeField]
+    private WaterLogs waves;
+
     IARSession _ARsession;  //An ARDK ARSession is the main piece that manages the AR experience
 
     void Start()
@@ -51,5 +54,6 @@ public class SceneManager : MonoBehaviour
     {
         leftHand.ApplyInput();
         rightHand.ApplyInput();
+        waves.ApplyInput();
     }
 }
