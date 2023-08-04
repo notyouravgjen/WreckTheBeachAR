@@ -1,16 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivatedTextBubbles : MonoBehaviour {
+public class ActivatedTextBubbles : MonoBehaviour
+{
     public enum Trigger { OnDamage, OnDestruction }
     public int currText = -1;
 
     private TextBubble[] allPossibleTexts;
     private Dictionary<Trigger, List<int>> triggerTextMap;
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         EventManager.TookDamageEvent += ChooseVisibleDialog;
 
         allPossibleTexts = gameObject.GetComponents<TextBubble>();
@@ -49,12 +49,7 @@ public class ActivatedTextBubbles : MonoBehaviour {
         List<int> possibleTexts = triggerTextMap[trigger];
         int mapIndex = Random.Range(0, possibleTexts.Count-1);
         currText = possibleTexts[mapIndex];
-        
     }
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     void OnGUI()
     {
