@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class WaterLogs : MonoBehaviour {
+public class WaterLogs : MonoBehaviour
+{
     public int size = 50;
     public float momentumLossPerUpdate;
     public Transform waveObject;
@@ -11,8 +12,8 @@ public class WaterLogs : MonoBehaviour {
     private Transform[] waves;
     public float[] singleWave;  // form of a single wave, as positive or negative offsets from the transform.position.y
 
-    // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         currFixedUpdateCount = 0;
         waveNumbers = new Waveable(size, momentumLossPerUpdate);
         waves = new Transform[size];
@@ -50,6 +51,6 @@ public class WaterLogs : MonoBehaviour {
 
 	public void Reset()
 	{
-		this.waveNumbers = new Waveable(size, momentumLossPerUpdate);
+		waveNumbers = new Waveable(size, momentumLossPerUpdate);
 	}
 }
