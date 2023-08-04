@@ -1,21 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Damageable : MonoBehaviour {
     public float damageThreshold = 2.0f;
     private bool wasRecentlyHit = false;
     private TieredAnimation myTieredAnimation;
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         EventManager.DamageThingsEvent += TakeDamage;
         myTieredAnimation = gameObject.GetComponentInChildren<TieredAnimation>();
     }
-	
-	// Update is called once per frame
-	void Update () {
-	}
 
     void TakeDamage(float damage)
     {
