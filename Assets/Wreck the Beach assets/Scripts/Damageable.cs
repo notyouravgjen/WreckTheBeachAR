@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public class Damageable : MonoBehaviour {
+public class Damageable : MonoBehaviour
+{
     private float damageThreshold = 1.0f;
     private bool wasRecentlyHit = false;
     private TieredAnimation myTieredAnimation;
