@@ -165,7 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ba60d3ec2bc9744bb5d5e1be7d1c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageThreshold: 2
 --- !u!95 &95835945422967612
 Animator:
   serializedVersion: 5
@@ -331,7 +330,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114384174084863742
 MonoBehaviour:
@@ -356,7 +355,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114109948526049062
 MonoBehaviour:
@@ -381,7 +380,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114666992903250328
 MonoBehaviour:
@@ -406,7 +405,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114988052047271682
 MonoBehaviour:
@@ -431,7 +430,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114493568063763958
 MonoBehaviour:
@@ -456,7 +455,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114285682003834788
 MonoBehaviour:
@@ -481,7 +480,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114690675224470884
 MonoBehaviour:
@@ -506,7 +505,7 @@ MonoBehaviour:
   triggersOn: 1
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114776946452493794
 MonoBehaviour:
@@ -531,7 +530,7 @@ MonoBehaviour:
   triggersOn: 1
   textOffset: -0.2
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114356954220462364
 MonoBehaviour:

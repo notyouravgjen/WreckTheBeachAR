@@ -394,7 +394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ba60d3ec2bc9744bb5d5e1be7d1c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageThreshold: 2
 --- !u!114 &114977645310210188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,7 +583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ba60d3ec2bc9744bb5d5e1be7d1c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageThreshold: 2
 --- !u!95 &95456060595744970
 Animator:
   serializedVersion: 5
@@ -725,7 +723,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.25
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114100137600168552
 MonoBehaviour:
@@ -750,7 +748,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.25
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114348386031056846
 MonoBehaviour:
@@ -775,7 +773,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.25
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114730389546813810
 MonoBehaviour:
@@ -800,7 +798,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.25
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114274684567529396
 MonoBehaviour:
@@ -825,7 +823,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.25
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114825181912610294
 MonoBehaviour:
@@ -850,7 +848,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.25
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114325159642720658
 MonoBehaviour:
@@ -875,7 +873,7 @@ MonoBehaviour:
   triggersOn: 0
   textOffset: -0.25
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114743282863464756
 MonoBehaviour:
@@ -900,7 +898,7 @@ MonoBehaviour:
   triggersOn: 1
   textOffset: -0.25
   textXRotate: 0
-  textYRotate: 90
+  textYRotate: 0
   textZRotate: 0
 --- !u!114 &114759133816370274
 MonoBehaviour:
@@ -943,7 +941,7 @@ Transform:
   m_GameObject: {fileID: 1748735728872464}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 8.24, y: 1, z: -5.44}
+  m_LocalPosition: {x: 1.7, y: 1, z: 2.95}
   m_LocalScale: {x: 0.4, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
