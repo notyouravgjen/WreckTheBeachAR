@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 
 	private void Start()
 	{
-		this.interactionDisabled = true;
+		interactionDisabled = true;
 
 		// SHOW SCRIPTED EVENTS...
 
@@ -56,11 +56,11 @@ public class GameManager : MonoBehaviour {
 
 	private void EndRound()
 	{
-		this.interactionDisabled = true;
+		interactionDisabled = true;
 
-		if (this.currentRoundDestructible != null)
+		if (currentRoundDestructible != null)
 		{
-			Destroy(this.currentRoundDestructible);
+			Destroy(currentRoundDestructible);
 		}
 
 		// WRECKED
@@ -85,39 +85,31 @@ public class GameManager : MonoBehaviour {
 		Vector3 pos = spawnPoint.transform.position;
 		Quaternion rot = Quaternion.Euler(0, 90, 0);
 
-		this.currentRoundDestructible = (GameObject)Instantiate(prefab, pos, rot, transform.parent);
+		currentRoundDestructible = Instantiate(prefab, pos, rot, transform.parent);
 
 		// play associated audio?
-		if (this.countingSounds != null)
+		if (countingSounds != null)
 		{
-			if (this.currentRoundIndex < this.countingSounds.Length)
+			if (currentRoundIndex < countingSounds.Length)
 			{
-				this.countingSounds[currentRoundIndex].Play();
+				countingSounds[currentRoundIndex].Play();
 			}
 		}
 
 		//mainMusic.SetFadeTarget(1.0f);
 
-		this.interactionDisabled = false;
+		interactionDisabled = false;
 
 		Invoke("HideLevelLabel", 4.0f);
 	}
 
-	void Update()
-	{
-		/*if (Input.GetKeyDown(KeyCode.A))
-		{
-			ProgressRound();
-		}*/
-	}
-
 	public void ProgressRound()
 	{
-		this.currentRoundIndex++;
+		currentRoundIndex++;
 
 		EndRound();
 
-		if (this.currentRoundIndex < this.destructiblePrefabs.Length)
+		if (currentRoundIndex < destructiblePrefabs.Length)
 		{
 			levelLabel.text = "Level " + (currentRoundIndex+1);
 			Invoke("ShowLevelLabel", 8.0f);
@@ -146,7 +138,7 @@ public class GameManager : MonoBehaviour {
         // End of game logic: dad shows up! - no, nevermind
         //fatherObject.SetActive(true);
 
-        UnityEngine.SceneManagement.SceneManager.LoadScene("title");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("TitleScene");
 	}
 
 	private void ShowNextScript()
